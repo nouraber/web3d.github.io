@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Relway',sans-serif;
+    background-color:#fff;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+input,button,textarea{
+    border: none;
+    outline: none;
+}
+/***************navigation*******************/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+   height: 40px;
+   line-height: 43px;
+   margin: 3px;
+   padding: 0 22px;
+   display: flex;
+   font-size: 0.7rem;
+   text-transform: uppercase;
+   font-weight: 500;
+   letter-spacing: 1px;
+   border: radius 3px; 
+   transition-timing-function: o.6s ease-in-out;
+   color:#ffffff;
+
+}
+nav ul li:hover{
+    background-color: rgb(226, 43, 134);
+    color: white;
+    box-shadow: 5px 10px 30px rgba(252,59, 0, 0.397);
+
+}
+.active{
+    background-color: rgb(226, 43, 134);
+    color: white;
+    box-shadow: 5px 10px 30px rgba(252,59, 0, 0.397);
+}
+.main{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(bg.jpg);
+    
+}
+.main-hed{
+    width: 500px;
+    position: absolute;
+    left: 16%;
+    top: 47%;
+    transform: translate(-16%,-47%);
+
+}
+.main-hed h1{
+    font-size: 30px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color:rgb(226, 43, 134);
+    font-family: 'Poppins ',sans-serif ;
+    -webkit-text-stroke: 0.3vw rgb(226, 43, 134);
+    text-transform: uppercase;
+    
+}
+.main-hed h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 40%;
+    color: #ffffff;
+    -webkit-text-stroke:0vw #ffffff;
+    border-right: 3px solid #ffffff;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+
+
+
+}
+@keyframes animate{
+    0%,10%,100%
+    {
+        width: 0%;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+.main-hed p{
+    color:white;
+
+}
+.main-btn{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 43, 134);
+    border-radius: 10px;
+    color: white;
+    transition: 0.6s ease-in-out;
+}
+.main-btn:hover{
+    box-shadow: 5px 10px 30px rgba(252, 59, 0, 0.397 );
+}
+.features{
+    width: 100%;
+    height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -100px;
+
+}
+.fc{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.fb{
+    background-color: white;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow:  rgba(252, 59, 0, 0.397 );
+
+}
+.f.imag{
+    width: 100%;
+    height: 63%;
+
+}
+.f.imag img{
+    width: 100%;
+    height: 100%;
+}
+.f.text{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+
+}
+
+    
+
+
+.f.text h4{
+    margin-top: -12px;
+    color: aquamarine;
+
+}
+.about{
+    width: 100%;
+    height: 110vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+
+}
+.about.image{
+    width: 50%;
+}
+.about.image img{
+    width: 500%;
+}
+.about.text{
+    width: 45%;
+    color: black;
+    text-align: right;
+
+}
+.about.text h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+}
+.about.text p {
+    font-size: 1.1rem;
+    color: black;
+
+}
+.about.text button{
+    float: right;
+    
+    
+}
+.c1{
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    color: #ffffff;
+    margin-left: 15px;
+    
+}
+
+
+
+

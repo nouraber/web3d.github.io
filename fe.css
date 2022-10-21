@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    height: 100vh;
+    overflow: hidden;
+    
+
+}
+
+.fe h1{
+    padding-top: 130px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+ 
